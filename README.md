@@ -77,6 +77,7 @@ xcodebuild -project ~/.appium/node_modules/appium-xcuitest-driver/node_modules/a
     + Trong trường hợp này, nó sẽ cài đặt và chạy WebDriverAgent trên thiết bị đã chỉ định.
 
 Sau khi đã Buil thành công chúng ta sẽ có App WebDriverAgent:
+
 ![](./step_definitions/assets/webdriverAgent_in_devices.png)
 
 
