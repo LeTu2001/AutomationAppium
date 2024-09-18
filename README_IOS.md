@@ -5,10 +5,13 @@
    + Kiểm tra máy đã cài đặt app: Xcode chưa nếu chưa chúng ta hãy lên App Store để tải về
    + Sau đó chúng ta bật Xcode
    + Mở Xcode ở bên tay trái -> Open Developer Tooler -> Simulator
+
 ![](./step_definitions/assets/how_to_open_simulator.png)
+
 Sau đó chúng ta mở AppSimulator và chọn thiết bị mà chúng ta sử dụng:
 
 File -> OpenSimulator -> (Chọn thiết bị mình sử dụng)
+
 ![](./step_definitions/assets/open_devices_in_Simulator.png)
 
 ## Webdriver
