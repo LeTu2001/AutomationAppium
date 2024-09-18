@@ -98,7 +98,7 @@ Sau khi đã Buil thành công chúng ta sẽ có App WebDriverAgent:
 
 - Khi bạn sử dụng "127.0.0.1", điều này có nghĩa là Appium Inspector sẽ cố gắng kết nối với Appium Server đang chạy trên chính máy tính của bạn. Nó chỉ ra rằng bạn đang chạy Appium Server và Appium Inspector trên cùng một máy.
 
-![](./step_definitions/assets/Remot_Port.png)
+![](./step_definitions/assets/Remote_Port.png)
 
 - "Remote Port" là số cổng mạng mà Appium Server đang lắng nghe các kết nối đến.
 - "4723": Đây là cổng mặc định mà Appium Server thường sử dụng. Nó xác định cổng cụ thể trên máy chủ mà Appium Inspector sẽ cố gắng kết nối đến.
@@ -108,7 +108,7 @@ Sau khi đã Buil thành công chúng ta sẽ có App WebDriverAgent:
 Lưu ý:
 Nếu bạn đã cấu hình Appium Server chạy trên một cổng khác, bạn cần điều chỉnh giá trị này cho phù hợp. Đảm bảo rằng cổng này không bị chặn bởi tường lửa hoặc đang được sử dụng bởi ứng dụng khác.
 
-![](./step_definitions/assets/Remot_Path.png)
+![](./step_definitions/assets/Remote_Path.png)
 
 - "Remote Path" là đường dẫn URL cơ sở mà Appium Server sử dụng để xử lý các yêu cầu WebDriver.
 - "/wd/hub/": Đây là đường dẫn mặc định được sử dụng bởi Appium Server.
