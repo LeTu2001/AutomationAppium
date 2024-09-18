@@ -33,10 +33,12 @@ WebDriverAgent (WDA) là một công cụ quan trọng trong việc kiểm thử
   + Cho phép kiểm thử tự động trên các thiết bị iOS thật và máy ảo.
   + Hỗ trợ nhiều loại tương tác phức tạp như đa chạm, 3D Touch.
   + Tương thích với nhiều phiên bản iOS khác nhau.
-- Thách thức:
+- Khó khăn:
   + Đôi khi gặp vấn đề về hiệu suất hoặc độ ổn định.
   + Cần cập nhật thường xuyên để tương thích với các phiên bản iOS mới.
-- Cài đặt và sử dụng:
+
+Cài đặt và sử dụng:
+
 Mở terminal:
   ```
   npm install -g appium
