@@ -91,7 +91,7 @@ Sau khi đã Buil thành công chúng ta sẽ có App WebDriverAgent:
 ## Appium Inspector 
 Để sử dụng bên AppiumInspector chúng ta cần lưu ý như sau:
 
- ![](./step_definitions/assets/Remot_Host.png)
+ ![](./step_definitions/assets/Remote_Host.png)
 - "Remote Host" là địa chỉ IP hoặc tên miền của máy chủ Appium mà Appium Inspector sẽ kết nối đến.
 
 - "127.0.0.1": Đây là địa chỉ IP loopback, còn được gọi là localhost. Nó đại diện cho máy tính hiện tại mà bạn đang sử dụng.
