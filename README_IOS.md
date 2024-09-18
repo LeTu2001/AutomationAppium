@@ -3,6 +3,9 @@
 ##  Simulator
  - Máy ảo trên Máy Mac được thực hiện như sau:
    + Kiểm tra máy đã cài đặt app: Xcode chưa nếu chưa chúng ta hãy lên App Store để tải về
+   ```
+    xcode-select --install
+   ```
    + Sau đó chúng ta bật Xcode
    + Mở Xcode ở bên tay trái -> Open Developer Tooler -> Simulator
 
@@ -84,3 +87,45 @@ xcodebuild -project ~/.appium/node_modules/appium-xcuitest-driver/node_modules/a
 Sau khi đã Buil thành công chúng ta sẽ có App WebDriverAgent:
 
 ![](./step_definitions/assets/webdriverAgent_in_devices.png)
+
+## Appium Inspector 
+Để sử dụng bên AppiumInspector chúng ta cần lưu ý như sau:
+
+ ![](./step_definitions/assets/Remot_Host.png)
+- "Remote Host" là địa chỉ IP hoặc tên miền của máy chủ Appium mà Appium Inspector sẽ kết nối đến.
+
+- "127.0.0.1": Đây là địa chỉ IP loopback, còn được gọi là localhost. Nó đại diện cho máy tính hiện tại mà bạn đang sử dụng.
+
+- Khi bạn sử dụng "127.0.0.1", điều này có nghĩa là Appium Inspector sẽ cố gắng kết nối với Appium Server đang chạy trên chính máy tính của bạn. Nó chỉ ra rằng bạn đang chạy Appium Server và Appium Inspector trên cùng một máy.
+
+![](./step_definitions/assets/Remot_Port.png)
+
+- "Remote Port" là số cổng mạng mà Appium Server đang lắng nghe các kết nối đến.
+- "4723": Đây là cổng mặc định mà Appium Server thường sử dụng. Nó xác định cổng cụ thể trên máy chủ mà Appium Inspector sẽ cố gắng kết nối đến.
+
+- Khi bạn chạy Appium Server, nó sẽ "lắng nghe" trên cổng này để nhận các yêu cầu từ client (trong trường hợp này là Appium Inspector). Appium Inspector sẽ sử dụng cổng này để gửi các lệnh và nhận phản hồi từ Appium Server.
+- Kết hợp với Remote Host, nó tạo thành địa chỉ đầy đủ để kết nối: 127.0.0.1:4723 Đảm bảo rằng giá trị này phải khớp với cổng mà Appium Server của bạn đang sử dụng.
+Lưu ý:
+Nếu bạn đã cấu hình Appium Server chạy trên một cổng khác, bạn cần điều chỉnh giá trị này cho phù hợp. Đảm bảo rằng cổng này không bị chặn bởi tường lửa hoặc đang được sử dụng bởi ứng dụng khác.
+
+![](./step_definitions/assets/Remot_Path.png)
+
+- "Remote Path" là đường dẫn URL cơ sở mà Appium Server sử dụng để xử lý các yêu cầu WebDriver.
+- "/wd/hub/": Đây là đường dẫn mặc định được sử dụng bởi Appium Server.
+- "wd" viết tắt cho "WebDriver".
+- "hub" đề cập đến trung tâm điều khiển của Appium.
+- Nó xác định phần cuối của URL mà Appium Inspector sẽ sử dụng để gửi các lệnh WebDriver đến Appium Server.
+- Kết hợp với Remote Host và Remote Port, nó tạo thành URL đầy đủ để kết nối, ví dụ: http://127.0.0.1:4723/wd/hub/
+- Appium sử dụng đường dẫn này để định tuyến các yêu cầu WebDriver đến các phần xử lý thích hợp trong server. Nó giúp phân biệt các yêu cầu WebDriver với các loại yêu cầu khác mà server có thể xử lý.
+
+Đây sẽ là một số thông tin khi kết nối với vs thiết bị (Máy ảo):
+
+![](./step_definitions/assets/devices_Iphone.png)
+
+Sau khi đã có thông số của máy ảo mà mình cần kết nối với AppiumInspector và thiết bị đó có WebDriverAgent.xcoderoj
+
+Chúng ta sẽ mở Terminal của máy tính vả khởi động Server Appium có cổng là 4723 
+```
+appium --base-path=/wd/hub -p 4073
+```
+Quay lại AppiumInspector để Start Sesion
