@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx codeceptjs run --verbose --features",
+    "prod": "npx codeceptjs run --features --plugins allure"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Appium là một khung phần mềm mã nguồn mở để tự động hóa kiểm thử các ứng dụng gốc, ứng dụng lai, và ứng dụng web trên di động, triển khai theo giao thức WebDriver. Nó cho phép bạn chạy các bài kiểm thử Selenium trên thiết bị di động và cũng có thể kiểm thử các ứng dụng gốc, lai, và ứng dụng web trên nền tảng di động.",
   "dependencies": {
-    "codeceptjs": "^3.6.5",
+    "codeceptjs": "^3.6.6",
     "playwright": "^1.47.1"
   },
   "devDependencies": {
