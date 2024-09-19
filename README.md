@@ -21,6 +21,7 @@ Appium Inspector là một ứng dụng đồ họa (GUI) được sử dụng �
 
 ## Cài đặt và sử dụng
 Chúng ta có thể truy cập vào linkGithub để có thể tải các bản mới nhất của AppiumInspector:
+
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/appium/appium-inspector)
 
 MacOS
