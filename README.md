@@ -94,7 +94,7 @@ Tạo một tệp có tên .env trong thư mục gốc của dự án của bạ
 ## AppiumMultiConfig.ts
 
 Tệp AppiumMultiConfig.ts được sử dụng để cấu hình Appium cho các bài kiểm tra tự động hóa. Tệp này sử dụng các biến môi trường để thiết lập các thông số cấu hình khác nhau dựa trên nền tảng và phiên bản nền tảng của thiết bị di động.
-``` typescripts
+``` typescript
 require("dotenv").config();
 
 var appiumPort: number = 4723;
@@ -105,7 +105,7 @@ var appiumPort: number = 4723;
 
 Đây là một ví dụ về AppiumMultiConfig
 
-``` typescripts 
+``` typescript 
 
 require("dotenv").config();
 
