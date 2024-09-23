@@ -4,13 +4,12 @@ import { appiumRootConfig } from "./AppiumMultiConfig";
 // export HEADLESS=true && npx codeceptjs run
 setHeadlessWhen(process.env.HEADLESS);
 
-require("dotenv").config();
 // enable all common plugins https://github.com/codeceptjs/configure#setcommonplugins
 setCommonPlugins();
 
 export const config: CodeceptJS.MainConfig = {
   tests: "./*_test.ts",
-  output: "./output",
+  output: "./output",   
   helpers: {
     Appium: appiumRootConfig,
     REST: {},

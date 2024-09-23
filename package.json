@@ -12,6 +12,7 @@
   "description": "Appium là một khung phần mềm mã nguồn mở để tự động hóa kiểm thử các ứng dụng gốc, ứng dụng lai, và ứng dụng web trên di động, triển khai theo giao thức WebDriver. Nó cho phép bạn chạy các bài kiểm thử Selenium trên thiết bị di động và cũng có thể kiểm thử các ứng dụng gốc, lai, và ứng dụng web trên nền tảng di động.",
   "dependencies": {
     "codeceptjs": "^3.6.6",
+    "dotenv": "^16.4.5",
     "playwright": "^1.47.1"
   },
   "devDependencies": {
