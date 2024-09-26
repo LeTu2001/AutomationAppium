@@ -9,7 +9,7 @@ Windows:
 ```
 npm install -g appium
 ```
-Xem thêm: [Appium_Android](./ReadMe/README_ANROID.md), [Appium_Android](./ReadMe/README_IOS.md)
+Xem thêm: [Appium_Android](./ReadMe/README_ANROID.md), [Appium_IOS](./ReadMe/README_IOS.md)
 
 ## Appium doctor
 Appium-doctor là một công cụ dòng lệnh hữu ích trong hệ sinh thái Appium, được thiết kế để giúp người dùng kiểm tra và chuẩn bị môi trường cho việc chạy Appium.
@@ -41,7 +41,7 @@ Sau khi đã cài đặt xong chúng ta sẽ có AppiumInspector:
 Cấu hình kết nối Appium Server:
 - Remote Host: Nhập địa chỉ IP của Appium Server (mặc định là 127.0.0.1 cho localhost).
 - Remote Port: Nhập cổng Appium Server đang lắng nghe (mặc định là 4723).
-- Remote Path: Thường để là "/".
+- Remote Path: Thường để là "/wd/hub".
 - SSL: Đánh dấu nếu sử dụng kết nối bảo mật.
 Advanced Settings:
 - Nhấp vào mũi tên để mở rộng cài đặt nâng cao nếu cần.
@@ -183,7 +183,6 @@ export const appiumRootConfig = {
 export var appiumOverrideConfig: object;
 if (process.env.PLATFORM == "Android") {
   appiumOverrideConfig = {
-    /* Custom config for device android emulator 13 */
     port: appiumPort,
     platform: process.env.PLATFORM,
     desiredCapabilities: {

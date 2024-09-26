@@ -19,23 +19,23 @@ appium-doctor
 ## Để tạo một thiết bị ảo để kiểm thử
 Mở Android Studio và tìm kiếm Create Device trong bảng Device Manager. 
 
-![](./step_definitions/assets/Create_Devices.png)
+![](../step_definitions/assets/Create_Devices.png)
 
 Chọn một cấu hình phần cứng phù hợp từ danh sách hoặc nhấp vào New Hardware Profile để tạo một cấu hình tùy chỉnh cho thiết bị ảo của bạn.
 
 Sau đó, chọn một hình ảnh cho hệ thống của bạn (phải là Android 11.0 trở lên, ví dụ: Tiramisu).
 
-![](./step_definitions/assets/Config_Devices.png)
+![](../step_definitions/assets/Config_Devices.png)
 
 LƯU Ý: chọn một tên thiết bị ngắn gọn, dễ nhớ (ví dụ: test-1) để sử dụng với trình giả lập trong dòng lệnh sau này.
 
-![](./step_definitions/assets/appiumInspector.png)
+![](../step_definitions/assets/appiumInspector.png)
 
 ## Máy Thật 
 Chúng ta phải bật Chế độ nhà phát triển thì mới có thể mở AppiumInspacetor trên đó
 
 
-![](./step_definitions/assets/huong_dan_bat_nha_phat_trien.png)
+![](../step_definitions/assets/huong_dan_bat_nha_phat_trien.png)
 
 Có thể xem chi tiết [Tại đây](https://fptshop.com.vn/tin-tuc/danh-gia/tuy-chon-nha-phat-trien-159833)
 
