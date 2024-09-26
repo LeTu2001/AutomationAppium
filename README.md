@@ -9,6 +9,8 @@ Windows:
 ```
 npm install -g appium
 ```
+Xem thêm: [Appium_Android](./ReadMe/README_ANROID.md), [Appium_Android](./ReadMe/README_IOS.md)
+
 ## Appium doctor
 Appium-doctor là một công cụ dòng lệnh hữu ích trong hệ sinh thái Appium, được thiết kế để giúp người dùng kiểm tra và chuẩn bị môi trường cho việc chạy Appium.
 
@@ -120,7 +122,7 @@ switch (process.env.PLATFORM) {
         appiumPort = 4012;
         break;
       case "13":
-        if (process.env.DEVICE_NAME == "R5CT72LT1FA") {
+        if (process.env.DEVICE_NAME == "{your devices}") {
           appiumPort = 4014;
         } else {
           appiumPort = 4013;
@@ -158,13 +160,6 @@ var appiumDesiredCapabilities = {
   "appium:platformName": process.env.PLATFORM,
   "appium:udid": process.env.UDID,
   "appium:newCommandTimeout": 350000,
-  // "appium:appWaitDuration": 350000,
-  // "appium:waitForIdleTimeout": 350000,
-  // "appium:wdaLocalPort": appiumPort + 200,
-  // "appium:wdaConnectionTimeout": 350000,
-  // "appium:wdaLaunchTimeout": 30000,
-  // "appium:usePrebuiltWDA": true,
-  // "appium:clearSystemFiles": true,
 };
 
 if (process.env.PLATFORM == "Android") {
@@ -200,10 +195,6 @@ if (process.env.PLATFORM == "Android") {
       "appium:appPackage": process.env.APP_PACKAGE,
       "appium:appActivity": process.env.APP_ACTIVITY,
       "appium:newCommandTimeout": 350000,
-      // "appium:appWaitDuration": 350000,
-      // "appium:waitForIdleTimeout": 350000,
-      // "appium:wdaLocalPort": appiumPort + 200,
-      // "appium:clearSystemFiles": true,
     },
   };
 } else {
@@ -221,10 +212,6 @@ if (process.env.PLATFORM == "Android") {
         "appium:automationName": "XCUITest",
         "appium:bundleId": process.env.BUNDLE_ID,
         "appium:newCommandTimeout": 350000,
-        // "appium:appWaitDuration": 350000,
-        // "appium:waitForIdleTimeout": 350000,
-        // "appium:wdaLocalPort": appiumPort + 200,
-        // "appium:clearSystemFiles": true,
       },
     };
   } else {
@@ -241,10 +228,6 @@ if (process.env.PLATFORM == "Android") {
         "appium:automationName": "XCUITest",
         "appium:bundleId": process.env.BUNDLE_ID,
         "appium:newCommandTimeout": 350000,
-        // "appium:appWaitDuration": 350000,
-        // "appium:waitForIdleTimeout": 350000,
-        // "appium:wdaLocalPort": appiumPort + 200,
-        // "appium:clearSystemFiles": true,
       },
     };
   }
@@ -262,10 +245,6 @@ switch (process.env.PLATFORM) {
       "appium:appPackage": process.env.APP_AGENCY_APP_PACKAGE,
       "appium:appActivity": process.env.APP_AGENCY_APP_ACTIVITY,
       "appium:newCommandTimeout": 350000,
-      // "appium:appWaitDuration": 350000,
-      // "appium:waitForIdleTimeout": 350000,
-      // "appium:wdaLocalPort": appiumPort + 200,
-      // "appium:clearSystemFiles": true,
     };
     break;
 
@@ -278,10 +257,6 @@ switch (process.env.PLATFORM) {
       "appium:automationName": "XCUITest",
       "appium:bundleId": process.env.APP_AGENCY_BUNDLE_ID,
       "appium:newCommandTimeout": 350000,
-      // "appium:appWaitDuration": 350000,
-      // "appium:waitForIdleTimeout": 350000,
-      // "appium:wdaLocalPort": appiumPort + 200,
-      // "appium:clearSystemFiles": true,
     };
     break;
 
